@@ -11,3 +11,14 @@
 4. Adding offers
 5. Deleting offers
 5. Filtering offers
+6. Sending e-mails after registration
+
+## Technologies
+
+- JAVA language
+- Spring Boot 
+<br /> - Spring Security
+- Database: H2
+- Hibernate
+- Thymeleaf
+- Mail sender
