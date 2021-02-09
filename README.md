@@ -17,7 +17,7 @@
 
 * JAVA language
 * Spring Boot 
-<br /> - Spring Security
+  * Spring Security
 * Database: H2
 * Hibernate
   * Hibernate Validator
