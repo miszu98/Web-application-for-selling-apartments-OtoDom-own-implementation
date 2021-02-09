@@ -36,7 +36,10 @@ spring.mail.password=
 ```
 
 ## Images 
-![alt text](https://i.imgur.com/6xxtTm0.png) Main page, sample offers are added here. Constants in the database. There is also filtering by province
+Main page, sample offers are added here. Constants in the database. There is also filtering by province
+<p align="center"> 
+  <img src="https://i.imgur.com/6xxtTm0.png"  width="700px">
+</p>
 <p align="center"> 
   <img src="https://i.imgur.com/24iL1Wh.png"  width="700px">
 </p>
