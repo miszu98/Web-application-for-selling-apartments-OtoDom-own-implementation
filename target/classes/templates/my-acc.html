@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Otodom - sign in</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" th:href="@{/home}">OtoDom</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/new-offer}">Dodaj ogłoszenie</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/search}">Wyszukaj</a>
+                </li>
+                <div sec:authorize="isAuthenticated()">
+                    <li class="nav-item active">
+                        <a class="nav-link" th:href="@{/my-acc}">Moje konto</a>
+                    </li>
+                </div>
+            </ul>
+
+
+            <div sec:authorize="isAuthenticated()">
+                <form th:action="@{/logout}">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Wyloguj się</button>
+                </form>
+            </div>
+
+            <div sec:authorize="isAnonymous()">
+                <form th:action="@{/login}">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Zaloguj się</button>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <br>
+    <h4 th:text="${luser}"></h4>
+    <hr>
+    <br>
+    <table class="table">
+        <h5>Twoje oferty</h5>
+        <tr>
+            <th>Zdjęcie</th>
+            <th>Tytuł ogłoszenia</th>
+            <th>Miasto</th>
+            <th>Cena</th>
+            <th></th>
+        </tr>
+        <tr th:each="off : ${youroffers}">
+            <td><img width="250" height="150" alt="brak zdjęcia" th:src="@{${off.getImg()}}"></td>
+            <td th:text="${off.getCity()}"></td>
+            <td th:text="${off.getTitle()}"></td>
+            <td th:text="${off.getFormatPrice()}"></td>
+            <td>
+                <form th:action="@{/delete-offer(id = ${off.getId()})}" method="post">
+                    <button type="submit" class="btn btn-success">usuń</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<br><br><br><br><br><br><br>
+<footer class="page-footer font-small unique-color-dark">
+
+    <div style="background-color: #5cb85c;">
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0">Pomożemy Ci zarządzać twoimi nieruchomościami!</h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                    <!-- Facebook -->
+                    <a class="fb-ic">
+                        <i class="fab fa-facebook-f white-text mr-4"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic">
+                        <i class="fab fa-twitter white-text mr-4"> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="gplus-ic">
+                        <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                    </a>
+                    <!--Linkedin -->
+                    <a class="li-ic">
+                        <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                        <i class="fab fa-instagram white-text"> </i>
+                    </a>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+
+        <!-- Grid row -->
+        <div class="row mt-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                <!-- Content -->
+                <h6 class="text-uppercase font-weight-bold">OtoDom</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>Otodom umożliwia użytkownikom przeglądanie i zamieszczanie ogłoszeń sprzedaży i wynajmu nieruchomości w szczególności mieszkań, domów, biur czy pokoi.
+                    W serwisie można również zamieścić reklamę swojej firmy i świadczonych usług jeśli
+                    są one związane z rynkiem nieruchomości.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Pomoc</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a href="#!" style="color:#5cb85c">Centrum Pomocy</a>
+                </p>
+                <p>
+                    <a href="#!" style="color:#5cb85c">Regulamin</a>
+                </p>
+                <p>
+                    <a href="#!" style="color:#5cb85c">Polityka prywatności</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Przydatne linki</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a href="#!" style="color:#5cb85c">Instagram</a>
+                </p>
+                <p>
+                    <a href="#!" style="color:#5cb85c">Facebook</a>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Kontakt</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <i class="fas fa-home mr-3"></i> Katowice, 40-000</p>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i> oto-biuro@wp.pl</p>
+                <p>
+                    <i class="fas fa-phone mr-3"></i> +48 567-987-345</p>
+
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://michalmalek.herokuapp.com/" style="color:#5cb85c"> Michał Małek</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+</body>
+
+</html>
