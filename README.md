@@ -75,3 +75,7 @@ spring.mail.password=
 ```diff 
 + COMPLETE
 ```
+
+```html
+<font color="#FFFFF">text</font>
+```
