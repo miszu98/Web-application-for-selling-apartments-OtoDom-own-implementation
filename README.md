@@ -5,7 +5,7 @@
 ### The assumptions were to create a web application that would allow:
 1. Account registrations
    * Full validation
-   * Password hashing ([red] BCrypt)
+   * Password hashing ([BCrypt])
 2. Login 
 3. Viewing offers
 4. Adding offers
@@ -26,5 +26,5 @@
 - Passay
 
 ## Launch
-<font color="red">Status: **Not yet implemented**</font>
+
 
