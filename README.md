@@ -3,16 +3,16 @@
 
 ## Assumptions
 ### The assumptions were to create a web application that would allow:
-1. Account registrations
+1. [Account registrations](#registration-form)
    * Full validation
    * Password hashing (`BCrypt`)
 2. [Login](#login-page)
-3. Viewing offers
-4. Adding offers
-5. Deleting offers
-5. Filtering offers
-6. Details of offers
-7. Sending e-mails after registration
+3. [Viewing offers](#main-page)
+4. [Adding offers](#after-logging-in)
+5. [Deleting offers](#after-logging-in)
+5. [Filtering offers](#filtered-offer)
+6. [Details of offers](#details-of-offer)
+7. [Sending e-mails after registration](#)
 
 ## Technologies
 
@@ -38,13 +38,14 @@ spring.mail.password=
 
 ## Images 
 
-### Main page, sample offers are added here. Constants in the database. There is also filtering by province.
+### Main page
+#### sample offers are added here. Constants in the database. There is also filtering by province.
 <p align="left"> 
   <img src="https://i.imgur.com/6xxtTm0.png"  width="700px">
 </p>
 
 ### Login page 
-#### from which we can go to the registration form.
+#### from which we can log in or go to the registration form.
 <p align="left"> 
   <img src="https://i.imgur.com/24iL1Wh.png"  width="700px">
 </p>
@@ -54,7 +55,8 @@ spring.mail.password=
   <img src="https://i.imgur.com/7ZOiIC8.png"  width="700px">
 </p>
 
-### After logging in, you can add/delete your own offers
+### After logging in
+#### you can add/delete your own offers.
 <p align="left"> 
   <img src="https://i.imgur.com/ZAnbKJk.png"  width="700px">
 </p>
