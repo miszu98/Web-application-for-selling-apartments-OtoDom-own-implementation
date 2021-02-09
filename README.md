@@ -36,4 +36,10 @@ spring.mail.password=
 ```
 
 ## Images 
-![alt text](https://i.imgur.com/vAkaOY1.png) ![alt text](https://i.imgur.com/tYoQOi1.png)
+![alt text](https://i.imgur.com/vAkaOY1.png) 
+![alt text](https://i.imgur.com/tYoQOi1.png)
+
+
+<p align="right"> 
+<img src="https://i.imgur.com/tYoQOi1.png">
+</p>
