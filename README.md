@@ -77,5 +77,5 @@ spring.mail.password=
 ```
 
 ```html
-<font color="#FFFFF">text</font>
+<span style="color:orange;">Word up</span>
 ```
