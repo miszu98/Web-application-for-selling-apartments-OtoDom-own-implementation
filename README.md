@@ -1,1 +1,4 @@
-# Web-application-for-selling-apartments-OtoDom-own-implementation
+# Web application for selling apartments 
+## Own implementation of real world apps
+
+
