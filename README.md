@@ -37,9 +37,9 @@ spring.mail.password=
 
 ## Images 
 Main page, sample offers are added here. Constants in the database. There is also filtering by province
-<p align="center"> 
+<p align="left"> 
   <img src="https://i.imgur.com/6xxtTm0.png"  width="700px">
 </p>
-<p align="center"> 
+<p align="left"> 
   <img src="https://i.imgur.com/24iL1Wh.png"  width="700px">
 </p>
