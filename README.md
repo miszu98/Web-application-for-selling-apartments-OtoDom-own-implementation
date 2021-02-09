@@ -6,12 +6,13 @@
 1. Account registrations
    * Full validation
    * Password hashing (`BCrypt`)
-2. Login 
-3. Viewing offers
-4. Adding offers
-5. Deleting offers
-5. Filtering offers
-6. Sending e-mails after registration
+2. [Login](#Login page from which we can go to the registration form.)
+3. [Viewing offers]
+4. [Adding offers]
+5. [Deleting offers]
+5. [Filtering offers]
+6. [Details of offers]
+7. [Sending e-mails after registration]
 
 ## Technologies
 
