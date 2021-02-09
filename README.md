@@ -6,7 +6,7 @@
 1. Account registrations
    * Full validation
    * Password hashing (`BCrypt`)
-2. [Login](#login-page)
+2. [Login](#login-page-from-which-we-can-go-to-the-registration-form.)
 3. Viewing offers
 4. Adding offers
 5. Deleting offers
