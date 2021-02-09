@@ -75,5 +75,3 @@ spring.mail.password=
 ```diff 
 + COMPLETE
 ```
-
-<span style="color:orange;">Word up</span>
