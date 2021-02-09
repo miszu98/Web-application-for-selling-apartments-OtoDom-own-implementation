@@ -5,7 +5,7 @@
 ### The assumptions were to create a web application that would allow:
 1. Account registrations
   <br /> - Full validation
-  <br /> - Password hashing (![#f03c15]BCrypt)
+  <br /> - Password hashing ($bg-red BCrypt)
 2. Login 
 3. Viewing offers
 4. Adding offers
@@ -15,12 +15,12 @@
 
 ## Technologies
 
-- JAVA language
-- Spring Boot 
+* JAVA language
+* Spring Boot 
 <br /> - Spring Security
-- Database: H2
-- Hibernate
-<br /> - Hibernate Validator
+* Database: H2
+* Hibernate
+  * Hibernate Validator
 - Thymeleaf
 - Mail sender
 - Passay
