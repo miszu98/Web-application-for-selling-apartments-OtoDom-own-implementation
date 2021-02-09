@@ -36,11 +36,29 @@ spring.mail.password=
 ```
 
 ## Images 
-Main page, sample offers are added here. Constants in the database. There is also filtering by province
+Main page, sample offers are added here. Constants in the database. There is also filtering by province.
 <p align="left"> 
   <img src="https://i.imgur.com/6xxtTm0.png"  width="700px">
 </p>
-Login Page
+Login page from which we can go to the registration form.
 <p align="left"> 
   <img src="https://i.imgur.com/24iL1Wh.png"  width="700px">
 </p>
+
+<p align="left"> 
+  <img src="https://i.imgur.com/7ZOiIC8.png"  width="700px">
+</p>
+
+<p align="left"> 
+  <img src="https://i.imgur.com/ZAnbKJk.png"  width="700px">
+</p>
+
+<p align="left"> 
+  <img src="https://i.imgur.com/OaSukpe.png"  width="700px">
+</p>
+
+<p align="left"> 
+  <img src="https://i.imgur.com/9x8diod.png"  width="700px">
+</p>
+
+
