@@ -6,7 +6,7 @@
 1. Account registrations
    * Full validation
    * Password hashing (`BCrypt`)
-2. [Login](#login-page-from-which-we-can-go-to-the-registration-form.)
+2. [Login](#login-page)
 3. Viewing offers
 4. Adding offers
 5. Deleting offers
@@ -43,7 +43,8 @@ spring.mail.password=
   <img src="https://i.imgur.com/6xxtTm0.png"  width="700px">
 </p>
 
-### Login page from which we can go to the registration form.
+### Login page 
+#### from which we can go to the registration form.
 <p align="left"> 
   <img src="https://i.imgur.com/24iL1Wh.png"  width="700px">
 </p>
