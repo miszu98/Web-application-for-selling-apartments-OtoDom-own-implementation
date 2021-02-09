@@ -26,5 +26,5 @@
 - Passay
 
 ## Launch
-
+### Before starting, configure the application.properties file for a specific e-mail from which the application will be able to send e-mails to users
 
