@@ -5,7 +5,7 @@
 ### The assumptions were to create a web application that would allow:
 1. Account registrations
   <br /> - Full validation
-  <br /> - Password hashing (BCrypt)
+  <br /> - Password hashing (![#f03c15]BCrypt)
 2. Login 
 3. Viewing offers
 4. Adding offers
@@ -24,5 +24,7 @@
 - Thymeleaf
 - Mail sender
 - Passay
+
+## Launch
 
 
