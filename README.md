@@ -4,7 +4,7 @@
 ## Assumptions
 ### The assumptions were to create a web application that would allow:
 1. Account registrations
-  1. Full validation
+   * Full validation
   <br /> - Password hashing ($bg-red BCrypt)
 2. Login 
 3. Viewing offers
