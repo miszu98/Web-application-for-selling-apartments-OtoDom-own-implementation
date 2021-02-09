@@ -20,5 +20,9 @@
 <br /> - Spring Security
 - Database: H2
 - Hibernate
+<br /> - Hibernate Validator
 - Thymeleaf
 - Mail sender
+- Passay
+
+
