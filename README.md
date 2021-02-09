@@ -14,7 +14,7 @@
 6. [Details of offers](#details-of-offer)
 7. [Sending e-mails after registration](#)
 
-## Technologies
+## Technologies and Dependecies
 
 * JAVA language
 * Spring Boot 
