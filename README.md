@@ -76,6 +76,4 @@ spring.mail.password=
 + COMPLETE
 ```
 
-```html
 <span style="color:orange;">Word up</span>
-```
