@@ -43,7 +43,7 @@ spring.mail.password=
   <img src="https://i.imgur.com/6xxtTm0.png"  width="700px">
 </p>
 
-### Login page 
+### Login page from which we can go to the registration form.
 <p align="left"> 
   <img src="https://i.imgur.com/24iL1Wh.png"  width="700px">
 </p>
