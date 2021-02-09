@@ -36,7 +36,9 @@ spring.mail.password=
 ```
 
 ## Images 
-`Main page, sample offers are added here. Constants in the database. There is also filtering by province.`
+```notepad
+Main page, sample offers are added here. Constants in the database. There is also filtering by province.
+```
 
 <p align="left"> 
   <img src="https://i.imgur.com/6xxtTm0.png"  width="700px">
