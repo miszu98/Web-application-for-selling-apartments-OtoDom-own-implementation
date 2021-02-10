@@ -71,6 +71,9 @@ spring.mail.password=
   <img src="https://i.imgur.com/9x8diod.png"  width="700px">
 </p>
 
+## Sources 
+https://www.otodom.pl/
+
 ## Status of project: 
 ```diff 
 + COMPLETE
