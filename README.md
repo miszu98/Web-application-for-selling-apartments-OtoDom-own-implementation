@@ -58,7 +58,7 @@ spring.mail.password=
 ### After logging in
 #### you can add/delete your own offers.
 <p align="left"> 
-  <img src="https://i.imgur.com/ZAnbKJk.png"  width="700px">
+  <img src="https://i.imgur.com/QjpQb0P.png"  width="700px">
 </p>
 
 ### Filtered offer
